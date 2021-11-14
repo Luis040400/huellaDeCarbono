@@ -1,0 +1,141 @@
+* {
+  -ms-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(8, 22, 22);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 22, 22, 1) 0%,
+    rgba(159, 245, 65, 1) 100%
+  );
+  height: 95vh;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  margin: 10px 50px;
+}
+.logo {
+  width: 237px;
+  height: 85px;
+}
+.content {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.content-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  color: #fff;
+  font-size: 58px;
+}
+.select {
+  font-size: 18px;
+  width: 469px;
+  height: 36px;
+  padding: 5px 8px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 7px;
+}
+.select-option {
+  font-size: 18px;
+  background-color: #fff;
+}
+.input {
+  font-size: 18px;
+  width: 469px;
+  height: 36px;
+  padding: 5px 8px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 7px;
+}
+.button {
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 213px;
+  height: 43px;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: #008cba;
+  color: white;
+}
+.resultado {
+  color: #fff;
+  font-size: 24px;
+}
+footer {
+  display: flex;
+  align-items: flex-end;
+  margin: 25px 10px;
+}
+.img {
+  width: 219px;
+  height: 169px;
+}
+@media screen and (max-width: 807px) {
+  .content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 15px;
+  }
+  .select {
+    width: 90%;
+    font-size: 12px;
+  }
+  .select-option {
+    font-size: 12px;
+  }
+  .input {
+    width: 90%;
+    font-size: 12px;
+  }
+  .title {
+    font-size: 42px;
+  }
+  .button {
+    width: 200px;
+    height: 33px;
+  }
+  .header {
+    font-size: 10px;
+    margin: 10px 5px;
+  }
+  .logo {
+    width: 180px;
+    height: 63px;
+  }
+  .resultado {
+    font-size: 16px;
+  }
+  footer {
+    margin: 10px 2px;
+  }
+  .img {
+    width: 200px;
+    height: 140px;
+  }
+}

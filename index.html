@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Huella de Carbono</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h2>LA VAQUITA FELIZ</h2>
+      </div>
+      <div>
+        <img
+          class="logo"
+          src="https://www.udb.edu.sv/udb/public/img/logos/logo_universidaddonbosco_letras.png"
+        />
+      </div>
+    </header>
+    <div class="content">
+      <div class="content-group">
+        <h1 class="title">Calculadora Huella de Carbono</h1>
+        <select name="option" id="option" class="select">
+          <option class="select-option" value="" disabled selected hidden>
+            Seleccione elemento...
+          </option>
+          <option class="select-option" value="energia">
+            Energía Eléctrica.(Kwh/mes)
+          </option>
+          <option class="select-option" value="agua">Agua. (m³/mes)</option>
+          <option class="select-option" value="papel">
+            Papel. (resmas/mes)
+          </option>
+          <option class="select-option" value="combustible">
+            Combustible. (gal. Diesel/mes)
+          </option>
+        </select>
+        <input
+          type="number"
+          placeholder=" Ingrese consumo en la cantidad seleccionada"
+          class="input"
+          id="cantidad"
+        />
+        <input
+          type="button"
+          value="Calcular"
+          class="button"
+          id="calcular"
+          onclick="calcular()"
+        />
+        <div id="resultado" class="resultado"></div>
+      </div>
+    </div>
+    <footer>
+      <img class="img" src="img/undraw_environment_iaus.svg" alt="" srcset="" />
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
